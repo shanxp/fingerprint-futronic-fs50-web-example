@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<link rel = "stylesheet"
+    type = "text/css"
+    href = "main.css" />
+<script type = "text/javascript" src = "scandemo.js"></script>
+<title>Futronic ScanAPI Demo</title>
+</head>
+
+<body onload = "onBodyLoad()">
+<div id="AppContainer">
+<h1>Futronic ScanAPI Demo</h1>
+<div id="header">
+<p>
+<img src = "bunner.png"/>
+</p>
+</div>
+
+
+<div id="controls">
+
+<div id="buttons">
+<form action = "">
+    <input type = "button" value = "Get Info" class="buttonLeft" id="GetinfoBtn" disabled onclick="beginOperation('getinfo')"/>
+    <input type = "button" value = "Capture" class="buttonLeft" id="CaptureBtn" disabled onclick="beginOperation('capture')"/>
+    <input type = "button" value = "Cancel" class="buttonRight" id="CancelBtn" disabled onclick="cancelOperation()"/>
+</form>
+</div>
+
+<div id="option">
+<form action = "">
+    <fieldset class="controlLeft">
+    <legend>Capture Options </legend>
+    <p>
+        <input type="checkbox" id="checkLFD" value="LFD"/>LFD<br>
+		<input type="checkbox" id="checkInvert" value="Invert"/>Invert<br>
+    </p>
+    </fieldset>
+</form>
+</div>
+
+</div>
+
+<div id="image">
+<canvas id="fingerframe" height="480" width="320"></canvas>
+</div>
+
+<div id="footer">
+<p id="result"></p>
+</div>
+
+<div id="resultLinks">
+<a id="resultLink" href="http://www.futronic-tech.com" rel="external" media="application/octet-stream">
+www.futronic-tech.com
+</a>
+<p>
+<a id="resultLinkWsq" href="http://www.futronic-tech.com" rel="external" media="application/octet-stream">
+www.futronic-tech.com
+</a>
+</div>
+
+</div>
+
+</body>
+
+</html>
